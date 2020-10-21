@@ -1,0 +1,9 @@
+{
+  "discord":{
+    "token": "YOUR_TOKEN",
+    "client_id": "YOUR_ID",
+    "youtube_api_key": "YOUTUBE_KEY",
+    "twitch_client_id": "TWITCH_ID",
+    "prefix": "?"
+    }
+}
