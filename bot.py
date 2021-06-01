@@ -16,7 +16,8 @@ async def on_ready():
   await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening,name='?help'))
   logging.info(f"Logged in as {bot.user.name}")
 
-COGS = [music.Music, error.CommandErrorHandler, meta.Meta, tips.Tips, roles.Roles]
+COGS = [error.CommandErrorHandler, meta.Meta, tips.Tips, roles.Roles]
+#COGS = [music.Music, error.CommandErrorHandler, meta.Meta, tips.Tips, roles.Roles]
 
 def add_cogs(bot):
   for cog in COGS:
@@ -29,4 +30,5 @@ def run():
       "No token has been provided. Please ensure that config.json contains the bot token."
     )
     sys.exit(1)
-  bot.run(cfg["token"])
+  #bot.run(cfg["token"])
+  bot.run(cfg["testBot_token"])
